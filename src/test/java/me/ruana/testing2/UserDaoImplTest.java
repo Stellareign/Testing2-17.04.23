@@ -27,7 +27,7 @@ class UserDaoImplTest {
 
     @Test
         // добавление существующего юзера
-    void shouldAddContainsUserToList()  {
+    void shouldAddContainsUserToList() {
         Assertions.assertThrows(RuntimeException.class, () -> {
             userDaoImpl.addUserToList(containsName);
         });

@@ -1,14 +1,10 @@
 package me.ruana.testing2.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.util.Objects;
 
 
 public class User {
-    private  String name;
+    private String name;
 
     public User(String name) {
         this.name = name;

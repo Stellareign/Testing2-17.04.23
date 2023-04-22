@@ -45,9 +45,9 @@ public class UserDaoImpl implements DAO {
             if (user.getName().equals(name)) {
                 return user;
             }
-        } throw new NameNotFoundException("Пользователь не найден в базе!");
+        }
+        throw new NameNotFoundException("Пользователь не найден в базе!");
     }
-
 
 
     // СПИСОК ВСЕХ ПОЛЬЗОВАТЕЛЕЙ:
@@ -58,7 +58,8 @@ public class UserDaoImpl implements DAO {
         } else
             return usersList;
     }
-//======================================================================================
+
+    //======================================================================================
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
